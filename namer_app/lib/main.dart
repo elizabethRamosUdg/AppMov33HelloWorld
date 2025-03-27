@@ -32,11 +32,15 @@ class MyAppState extends ChangeNotifier {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
-
     return Scaffold(
       body: Center(
-        child: Text('Hello World!'),
+        child: Align(
+          alignment: Alignment.center,
+          child: Text(
+            'Hello World',
+            textAlign: TextAlign.center,
+          ),
+        ),
       ),
     );
   }
